@@ -1,0 +1,9 @@
+.btn-outline-warning:hover
+{
+    color: white !important;
+}
+
+.nav-link:hover
+{
+    color: #ffc107 !important;
+}

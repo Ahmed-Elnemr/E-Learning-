@@ -1,0 +1,64 @@
+
+<!-- Courses Section Start -->
+<div class="container-fluid mb-5 mt-5 p-5" style="background-color:#002147">
+  <div class="row">
+    <div class="col-12">
+      <section class="categories-section spad">
+        <div class="container">
+
+          <!-- section-title -->
+            <div class="section-title text-light text-center">
+                <h1 class="fs-1 mb-5">Our Courses Content</h1>
+                <p class="fs-1 m-auto text-warning mb-5 mt-3" *ngIf ="!authService.loggedIn()">Please Login To Start Watch Course</p>
+            </div>
+            <div class="row" *ngIf ="authService.loggedIn()">
+              <div class="col-sm-12 col-md-9">
+                <div class="categorie-item">
+                  <div class="ci-text">
+                    <h1 style="font-weight: bold">Course Content</h1>
+                  </div>
+                </div>
+                <div  *ngFor="let course of data">
+                  <a [href]="course.source" target="_blank">
+                    <div class="categorie-item">
+                      <div class="ci-text">
+                        <h3>
+                          Lessons
+                        </h3>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia dolor minus et explicabo illo, accusamus repellat reprehenderit totam non, doloremque perspiciatis repellendus necessitatibus, iusto eum voluptas ipsum qui? Minima.</p>
+              </div>
+            </div>
+        </div>
+    </section>
+    </div>
+  </div>
+  </div>
+  <!-- Courses Section End -->
+
+
+
+  <!-- <div class="container-fluid mb-5 mt-5 p-5">
+  <div class="row">
+      <app-search class="col-12"></app-search>
+  </div>
+  </div>
+
+
+  <div class="container-fluid mb-5 mt-5">
+  <div class="row">
+      <app-our-experience-advisors class="col-12"></app-our-experience-advisors>
+  </div>
+  </div>
+
+
+  <div class="container-fluid mt-5 mb-5">
+  <div class="row">
+      <app-what-our-students-say class="col-12"></app-what-our-students-say>
+  </div>
+  </div> -->
